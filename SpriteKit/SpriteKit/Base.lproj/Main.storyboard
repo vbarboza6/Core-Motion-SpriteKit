@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpriteKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEi-P0-htc">
+                                <rect key="frame" x="39" y="361" width="294" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="n7v-jY-lfO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mU-Gw-nFy">
+                                <rect key="frame" x="30" y="58" width="315" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="4Fc-SC-nZU"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movement Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWP-De-elW">
+                                <rect key="frame" x="30" y="456" width="315" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="YxT-RV-jOF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDn-8y-ZAP">
+                                <rect key="frame" x="39" y="306" width="306" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tEi-P0-htc" firstAttribute="top" secondItem="mDn-8y-ZAP" secondAttribute="bottom" constant="34" id="7Ar-PO-dQl"/>
+                            <constraint firstItem="tEi-P0-htc" firstAttribute="leading" secondItem="mDn-8y-ZAP" secondAttribute="leading" id="Dpi-Dj-OSQ"/>
+                            <constraint firstItem="1mU-Gw-nFy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="IXz-pE-mPm"/>
+                            <constraint firstItem="hWP-De-elW" firstAttribute="trailing" secondItem="mDn-8y-ZAP" secondAttribute="trailing" id="NCI-cU-uKP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hWP-De-elW" secondAttribute="bottom" constant="29" id="U18-iR-5d6"/>
+                            <constraint firstItem="mDn-8y-ZAP" firstAttribute="trailing" secondItem="1mU-Gw-nFy" secondAttribute="trailing" id="hH2-PQ-i9D"/>
+                            <constraint firstItem="mDn-8y-ZAP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="306" id="i33-cD-Hcc"/>
+                            <constraint firstItem="1mU-Gw-nFy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="iSP-B3-8tm"/>
+                            <constraint firstItem="hWP-De-elW" firstAttribute="leading" secondItem="1mU-Gw-nFy" secondAttribute="leading" id="lMX-ch-3qA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tEi-P0-htc" secondAttribute="trailing" constant="26" id="q9a-O3-JNQ"/>
+                            <constraint firstItem="mDn-8y-ZAP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="szu-qm-De6"/>
+                            <constraint firstAttribute="trailing" secondItem="1mU-Gw-nFy" secondAttribute="trailing" constant="30" id="ufA-td-y2R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goalLabel" destination="mDn-8y-ZAP" id="x5f-gV-d8p"/>
+                        <outlet property="goalPicker" destination="1mU-Gw-nFy" id="9qF-XC-h9W"/>
+                        <outlet property="movementLable" destination="hWP-De-elW" id="8st-9q-Ef5"/>
+                        <outlet property="stepLable" destination="tEi-P0-htc" id="je3-5u-4Ns"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
