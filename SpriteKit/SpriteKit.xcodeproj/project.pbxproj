@@ -194,17 +194,20 @@
 					F744930A1F798D0B008E48D9 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 52823ULQN3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					F744931E1F798D0B008E48D9 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 52823ULQN3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F744930A1F798D0B008E48D9;
 					};
 					F74493291F798D0B008E48D9 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 52823ULQN3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F744930A1F798D0B008E48D9;
 					};

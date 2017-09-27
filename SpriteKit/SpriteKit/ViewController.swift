@@ -108,7 +108,24 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // unwrap the activity and disp
         if let unwrappedActivity = activity {
             DispatchQueue.main.async{
-                self.movementLable.text = "Walking: \(unwrappedActivity.walking)\n Still: \(unwrappedActivity.stationary)\n Cycling: \(unwrappedActivity.cycling)\n Running: \(unwrappedActivity.running)\n Driving: \(unwrappedActivity.automotive)\n Unknown: \(unwrappedActivity.unknown)"
+                if unwrappedActivity.walking == true {
+                    self.movementLable.text = "Movement: Walking"
+                }
+                else if unwrappedActivity.running == true{
+                    self.movementLable.text = "Movement: Running"
+                }
+                else if unwrappedActivity.cycling == true{
+                    self.movementLable.text = "Movement: Cycling"
+                }
+                else if unwrappedActivity.stationary == true{
+                    self.movementLable.text = "Movement: Still"
+                }
+                else if unwrappedActivity.automotive == true{
+                    self.movementLable.text = "Movement: Driving"
+                }
+                else if unwrappedActivity.unknown == true{
+                    self.movementLable.text = "Movement: Uknown"
+                }
             }
         }
     }

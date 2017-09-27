@@ -37,17 +37,17 @@
                                     <constraint firstAttribute="height" constant="131" id="4Fc-SC-nZU"/>
                                 </constraints>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movement Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWP-De-elW">
-                                <rect key="frame" x="30" y="456" width="315" height="182"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="182" id="YxT-RV-jOF"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDn-8y-ZAP">
+                                <rect key="frame" x="39" y="306" width="306" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDn-8y-ZAP">
-                                <rect key="frame" x="39" y="306" width="306" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movement Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWP-De-elW">
+                                <rect key="frame" x="39" y="456" width="315" height="182"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="YxT-RV-jOF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -58,12 +58,12 @@
                             <constraint firstItem="tEi-P0-htc" firstAttribute="top" secondItem="mDn-8y-ZAP" secondAttribute="bottom" constant="34" id="7Ar-PO-dQl"/>
                             <constraint firstItem="tEi-P0-htc" firstAttribute="leading" secondItem="mDn-8y-ZAP" secondAttribute="leading" id="Dpi-Dj-OSQ"/>
                             <constraint firstItem="1mU-Gw-nFy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="IXz-pE-mPm"/>
-                            <constraint firstItem="hWP-De-elW" firstAttribute="trailing" secondItem="mDn-8y-ZAP" secondAttribute="trailing" id="NCI-cU-uKP"/>
+                            <constraint firstItem="hWP-De-elW" firstAttribute="trailing" secondItem="mDn-8y-ZAP" secondAttribute="trailing" constant="9" id="NCI-cU-uKP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hWP-De-elW" secondAttribute="bottom" constant="29" id="U18-iR-5d6"/>
                             <constraint firstItem="mDn-8y-ZAP" firstAttribute="trailing" secondItem="1mU-Gw-nFy" secondAttribute="trailing" id="hH2-PQ-i9D"/>
                             <constraint firstItem="mDn-8y-ZAP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="306" id="i33-cD-Hcc"/>
                             <constraint firstItem="1mU-Gw-nFy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="iSP-B3-8tm"/>
-                            <constraint firstItem="hWP-De-elW" firstAttribute="leading" secondItem="1mU-Gw-nFy" secondAttribute="leading" id="lMX-ch-3qA"/>
+                            <constraint firstItem="hWP-De-elW" firstAttribute="leading" secondItem="1mU-Gw-nFy" secondAttribute="leading" constant="9" id="lMX-ch-3qA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tEi-P0-htc" secondAttribute="trailing" constant="26" id="q9a-O3-JNQ"/>
                             <constraint firstItem="mDn-8y-ZAP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="szu-qm-De6"/>
                             <constraint firstAttribute="trailing" secondItem="1mU-Gw-nFy" secondAttribute="trailing" constant="30" id="ufA-td-y2R"/>
