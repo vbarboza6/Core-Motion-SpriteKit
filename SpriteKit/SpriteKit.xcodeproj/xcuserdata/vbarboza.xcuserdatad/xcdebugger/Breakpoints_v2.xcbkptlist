@@ -6,94 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpriteKit/ViewController.swift"
-            timestampString = "528225598.836284"
+            timestampString = "528399514.036359"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SpriteKit.ViewController.stepLable.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "SpriteKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vbarboza/Documents/Core-Motion-SpriteKit/SpriteKit/SpriteKit/ViewController.swift"
-                  timestampString = "528080863.370671"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SpriteKit.ViewController.stepLable.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
-                  moduleName = "SpriteKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vbarboza/Documents/Core-Motion-SpriteKit/SpriteKit/SpriteKit/ViewController.swift"
-                  timestampString = "528080863.375836"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "52">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SpriteKit.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; SpriteKit.ViewController"
-                  moduleName = "SpriteKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vbarboza/Documents/Core-Motion-SpriteKit/SpriteKit/SpriteKit/ViewController.swift"
-                  timestampString = "528080863.378691"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "220">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SpriteKit.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;SpriteKit.ViewController&gt;"
-                  moduleName = "SpriteKit"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vbarboza/Documents/Core-Motion-SpriteKit/SpriteKit/SpriteKit/ViewController.swift"
-                  timestampString = "528080863.381444"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "26"
-                  endingLineNumber = "26"
-                  offsetFromSymbolStart = "164">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SpriteKit/ViewController.swift"
-            timestampString = "528225598.837029"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "startPedometerMonitoring()"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "handlePedometer(_:error:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -104,13 +26,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpriteKit/ViewController.swift"
-            timestampString = "528225598.837612"
+            timestampString = "528399514.038273"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "totalSteps"
-            landmarkType = "24">
+            startingLineNumber = "149"
+            endingLineNumber = "149"
+            landmarkName = "handlePedometer(_:error:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpriteKit/ViewController.swift"
+            timestampString = "528399514.03989"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "startPedometerMonitoring()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpriteKit/ViewController.swift"
+            timestampString = "528399514.041457"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "startPedometerMonitoring()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

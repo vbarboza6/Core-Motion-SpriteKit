@@ -15,20 +15,24 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     let pedometer = CMPedometer();
     let motion = CMMotionManager()
     let userDefaults = UserDefaults.standard
-    var totalSteps: Float = 0.0 {
+    var stepsYesterday: Float = 0.0
+    var stepsToday: Float = 0.0 {
         willSet(newtotalSteps){
             DispatchQueue.main.async{
-                self.stepLable.text = "Steps: \(newtotalSteps)"
+                self.todaysSteps.text = "Steps Today: \(newtotalSteps)"
                 self.userDefaults.set(newtotalSteps, forKey: "steps")
             }
         }
     }
     let calendar = Calendar.current
-    var twoDaysAgo = Date();
+    var yesterday = Date();
+    var today = Date();
     let steps = ["1000", "2000", "3000", "4000", "5000", "6000", "7000", "8000", "9000", "10000"]
     
     @IBOutlet weak var goalLabel: UILabel!
     @IBOutlet weak var stepLable: UILabel!
+    @IBOutlet weak var todaysSteps: UILabel!
+    @IBOutlet weak var yesterdaysSteps: UILabel!
     @IBOutlet weak var movementLable: UILabel!
     @IBOutlet weak var goalPicker: UIPickerView!
     
@@ -36,7 +40,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let userDefaults = UserDefaults.standard
-        self.totalSteps = 0.0
+        self.stepsToday = 0.0
+        self.stepsYesterday = 0.0
         goalPicker.delegate = self
         goalPicker.dataSource = self
         self.startActivityMonitoring()
@@ -53,10 +58,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             userDefaults.synchronize()
         }
         
-        // if we find a preference for "measurementType" then read its value
         if userDefaults.value(forKey: "steps") != nil
         {
-            self.stepLable.text = "Current Goal: \(userDefaults.float(forKey: "steps"))"
+            //self.stepLable.text = "Current Goal: \(userDefaults.float(forKey: "steps"))"
         }
         else // no preference was found so we set a default value
         {
@@ -132,21 +136,30 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     // MARK: Pedometer Functions
     func startPedometerMonitoring(){
-        self.twoDaysAgo = calendar.date(byAdding: .day, value: -2, to: Date())!
+        self.yesterday = calendar.date(byAdding: .day, value: -1, to: Date())!
         //separate out the handler for better readability
         if CMPedometer.isStepCountingAvailable(){
-            pedometer.startUpdates(from: twoDaysAgo,
-                                   withHandler: handlePedometer)
+            pedometer.startUpdates(from: today, withHandler: handlePedometer(_:error:))
+            pedometer.queryPedometerData(from: yesterday, to: yesterday, withHandler: handlePedometerYesterday(_:error:))
         }
     }
     
     //ped handler
     func handlePedometer(_ pedData:CMPedometerData?, error:Error?)->(){
         if let steps = pedData?.numberOfSteps {
-            self.totalSteps = steps.floatValue
+            self.stepsToday = steps.floatValue
         }
     }
-
+    
+    //ped handler
+    func handlePedometerYesterday(_ pedData:CMPedometerData?, error:Error?)->(){
+        if let steps = pedData?.numberOfSteps {
+            self.stepsYesterday = steps.floatValue
+            let s = NSString(format: "%.2f", self.stepsYesterday)
+            self.yesterdaysSteps.text = "Steps Yesterday: " + (s as String)
+        }
+    }
+ 
 
 }
 

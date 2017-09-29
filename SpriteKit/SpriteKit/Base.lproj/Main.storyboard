@@ -22,15 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEi-P0-htc">
-                                <rect key="frame" x="39" y="361" width="294" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="n7v-jY-lfO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1mU-Gw-nFy">
                                 <rect key="frame" x="30" y="58" width="315" height="131"/>
                                 <constraints>
@@ -52,19 +43,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXS-bt-M3h">
+                                <rect key="frame" x="39" y="388" width="294" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="RqH-Zr-qD5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEi-P0-htc">
+                                <rect key="frame" x="39" y="335" width="294" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="qH2-ib-bAo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tEi-P0-htc" firstAttribute="top" secondItem="mDn-8y-ZAP" secondAttribute="bottom" constant="34" id="7Ar-PO-dQl"/>
-                            <constraint firstItem="tEi-P0-htc" firstAttribute="leading" secondItem="mDn-8y-ZAP" secondAttribute="leading" id="Dpi-Dj-OSQ"/>
+                            <constraint firstItem="tEi-P0-htc" firstAttribute="top" secondItem="mDn-8y-ZAP" secondAttribute="bottom" constant="8" symbolic="YES" id="9Zf-Gc-ldh"/>
+                            <constraint firstItem="tEi-P0-htc" firstAttribute="trailing" secondItem="GXS-bt-M3h" secondAttribute="trailing" id="BHI-XE-sMV"/>
+                            <constraint firstItem="GXS-bt-M3h" firstAttribute="top" secondItem="tEi-P0-htc" secondAttribute="bottom" constant="8" symbolic="YES" id="HTA-lZ-2RY"/>
                             <constraint firstItem="1mU-Gw-nFy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="IXz-pE-mPm"/>
                             <constraint firstItem="hWP-De-elW" firstAttribute="trailing" secondItem="mDn-8y-ZAP" secondAttribute="trailing" constant="9" id="NCI-cU-uKP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hWP-De-elW" secondAttribute="bottom" constant="29" id="U18-iR-5d6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tEi-P0-htc" secondAttribute="trailing" constant="26" id="ZMZ-Kn-hsm"/>
+                            <constraint firstItem="tEi-P0-htc" firstAttribute="leading" secondItem="mDn-8y-ZAP" secondAttribute="leading" id="fDx-f2-kgT"/>
                             <constraint firstItem="mDn-8y-ZAP" firstAttribute="trailing" secondItem="1mU-Gw-nFy" secondAttribute="trailing" id="hH2-PQ-i9D"/>
                             <constraint firstItem="mDn-8y-ZAP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="306" id="i33-cD-Hcc"/>
                             <constraint firstItem="1mU-Gw-nFy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="iSP-B3-8tm"/>
+                            <constraint firstItem="tEi-P0-htc" firstAttribute="leading" secondItem="GXS-bt-M3h" secondAttribute="leading" id="jIt-i6-DBm"/>
                             <constraint firstItem="hWP-De-elW" firstAttribute="leading" secondItem="1mU-Gw-nFy" secondAttribute="leading" constant="9" id="lMX-ch-3qA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="tEi-P0-htc" secondAttribute="trailing" constant="26" id="q9a-O3-JNQ"/>
                             <constraint firstItem="mDn-8y-ZAP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="szu-qm-De6"/>
                             <constraint firstAttribute="trailing" secondItem="1mU-Gw-nFy" secondAttribute="trailing" constant="30" id="ufA-td-y2R"/>
                         </constraints>
@@ -73,7 +85,8 @@
                         <outlet property="goalLabel" destination="mDn-8y-ZAP" id="x5f-gV-d8p"/>
                         <outlet property="goalPicker" destination="1mU-Gw-nFy" id="9qF-XC-h9W"/>
                         <outlet property="movementLable" destination="hWP-De-elW" id="8st-9q-Ef5"/>
-                        <outlet property="stepLable" destination="tEi-P0-htc" id="je3-5u-4Ns"/>
+                        <outlet property="todaysSteps" destination="GXS-bt-M3h" id="E0j-xc-th2"/>
+                        <outlet property="yesterdaysSteps" destination="tEi-P0-htc" id="CPk-Og-Fzw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
