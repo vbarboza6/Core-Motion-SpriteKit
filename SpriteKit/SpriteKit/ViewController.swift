@@ -35,6 +35,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var yesterdaysSteps: UILabel!
     @IBOutlet weak var movementLable: UILabel!
     @IBOutlet weak var goalPicker: UIPickerView!
+    @IBOutlet weak var gameButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +47,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         goalPicker.dataSource = self
         self.startActivityMonitoring()
         self.startPedometerMonitoring()
+        self.gameButton.isHidden = true
+        self.checkGoalStatus()
         
         if userDefaults.value(forKey: "goals") != nil
         {
@@ -67,6 +70,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             userDefaults.set("0", forKey: "steps")
             userDefaults.synchronize()
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -95,6 +99,15 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     func updateGoalLabel() {
         self.goalLabel.text = "Current Goal: " + userDefaults.string(forKey: "goals")!
+    }
+    
+    func checkGoalStatus() {
+        if stepsYesterday >= userDefaults.float(forKey: "goals"){
+            self.gameButton.isHidden = false
+        }
+        else{
+            self.gameButton.isHidden = true
+        }
     }
     
     // MARK: Activity Functions
@@ -171,6 +184,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             let s = NSString(format: "%.2f", self.stepsYesterday)
             self.userDefaults.set(stepsYesterday, forKey: "steps")
             self.yesterdaysSteps.text = "Steps Yesterday: " + (s as String)
+            self.checkGoalStatus()
         }
     }
  

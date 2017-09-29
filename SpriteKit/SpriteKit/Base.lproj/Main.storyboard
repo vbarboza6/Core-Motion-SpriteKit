@@ -37,6 +37,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEi-P0-htc">
+                                <rect key="frame" x="41" y="371" width="137" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movement Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWP-De-elW">
                                 <rect key="frame" x="41" y="482" width="135" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -52,12 +58,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday's Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEi-P0-htc">
-                                <rect key="frame" x="41" y="371" width="137" height="45"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koc-DY-ebY">
+                                <rect key="frame" x="145" y="571" width="85" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="zTm-Kw-Ee2"/>
+                                </constraints>
+                                <state key="normal" title="Push to Play">
+                                    <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -68,16 +77,20 @@
                             <constraint firstAttribute="trailingMargin" secondItem="mDn-8y-ZAP" secondAttribute="trailing" constant="11" id="Def-DK-2fp"/>
                             <constraint firstItem="1mU-Gw-nFy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="GQx-5B-naY"/>
                             <constraint firstItem="hWP-De-elW" firstAttribute="trailing" secondItem="GXS-bt-M3h" secondAttribute="trailing" id="IEV-Bu-PUN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="koc-DY-ebY" secondAttribute="bottom" constant="43" id="JaU-AV-qaQ"/>
                             <constraint firstItem="mDn-8y-ZAP" firstAttribute="leading" secondItem="tEi-P0-htc" secondAttribute="leading" id="LOy-ks-at8"/>
                             <constraint firstItem="1mU-Gw-nFy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="XXB-2w-dPs"/>
+                            <constraint firstItem="koc-DY-ebY" firstAttribute="top" secondItem="hWP-De-elW" secondAttribute="bottom" constant="68" id="c91-W3-rnW"/>
                             <constraint firstItem="GXS-bt-M3h" firstAttribute="top" secondItem="tEi-P0-htc" secondAttribute="bottom" constant="-7" id="ccp-WC-bwI"/>
                             <constraint firstItem="mDn-8y-ZAP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="eSi-w3-hr2"/>
                             <constraint firstItem="hWP-De-elW" firstAttribute="top" secondItem="GXS-bt-M3h" secondAttribute="bottom" constant="39" id="iWl-cI-QBk"/>
                             <constraint firstItem="tEi-P0-htc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="jQK-hq-qdd"/>
+                            <constraint firstItem="koc-DY-ebY" firstAttribute="centerX" secondItem="mDn-8y-ZAP" secondAttribute="centerX" constant="-7" id="wdj-j9-gu2"/>
                             <constraint firstItem="mDn-8y-ZAP" firstAttribute="top" secondItem="1mU-Gw-nFy" secondAttribute="bottom" constant="85" id="xqb-Hy-Ot1"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="gameButton" destination="koc-DY-ebY" id="dz3-Ar-Jki"/>
                         <outlet property="goalLabel" destination="mDn-8y-ZAP" id="x5f-gV-d8p"/>
                         <outlet property="goalPicker" destination="1mU-Gw-nFy" id="9qF-XC-h9W"/>
                         <outlet property="movementLable" destination="hWP-De-elW" id="8st-9q-Ef5"/>
