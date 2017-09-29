@@ -20,14 +20,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         willSet(newtotalSteps){
             DispatchQueue.main.async{
                 self.todaysSteps.text = "Steps Today: \(newtotalSteps)"
-                self.userDefaults.set(newtotalSteps, forKey: "steps")
+//                self.userDefaults.set(newtotalSteps, forKey: "steps")
             }
         }
     }
     let calendar = Calendar.current
     var yesterday = Date();
     var today = Date();
-    let steps = ["1000", "2000", "3000", "4000", "5000", "6000", "7000", "8000", "9000", "10000"]
+    let steps = ["-","1000", "2000", "3000", "4000", "5000", "6000", "7000", "8000", "9000", "10000"]
     
     @IBOutlet weak var goalLabel: UILabel!
     @IBOutlet weak var stepLable: UILabel!
@@ -138,28 +138,28 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func startPedometerMonitoring(){
         let lateYesterday = calendar.date(byAdding: .day, value: -2, to: Date())!
         self.yesterday = calendar.date(byAdding: .day, value: -1, to: Date())!
-        self.today = calendar.date(byAdding: .day, value: 0, to: Date())!
+        //self.today = calendar.date(byAdding: .day, value: 0, to: Date())!
         
         //separate out the handler for better readability
         if CMPedometer.isStepCountingAvailable(){
-            pedometer.startUpdates(from: lateYesterday, withHandler: handlePedometer(_:error:))
+            pedometer.startUpdates(from: yesterday, withHandler: handlePedometer(_:error:))
             pedometer.queryPedometerData(from: lateYesterday, to: yesterday, withHandler: handlePedometerYesterday(_:error:))
-            pedometer.queryPedometerData(from: yesterday, to: today, withHandler: handlePedometerToday(_:error:))
+            //pedometer.queryPedometerData(from: yesterday, to: today, withHandler: handlePedometerToday(_:error:))
         }
     }
     
     //ped handler
     func handlePedometer(_ pedData:CMPedometerData?, error:Error?)->(){
-//        if let steps = pedData?.numberOfSteps {
-//            self.stepsToday = steps.floatValue
-//        }
+        if let steps = pedData?.numberOfSteps {
+            self.stepsToday = steps.floatValue
+        }
     }
     
     //ped handler
     func handlePedometerToday(_ pedData:CMPedometerData?, error:Error?)->(){
         if let steps = pedData?.numberOfSteps {
             self.stepsToday = steps.floatValue
-            let s = NSString(format: "%.2f", self.stepsYesterday)
+            let s = NSString(format: "%.2f", self.stepsToday)
             self.todaysSteps.text = "Steps Today: " + (s as String)
         }
     }
@@ -169,6 +169,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         if let steps = pedData?.numberOfSteps {
             self.stepsYesterday = steps.floatValue
             let s = NSString(format: "%.2f", self.stepsYesterday)
+            self.userDefaults.set(stepsYesterday, forKey: "steps")
             self.yesterdaysSteps.text = "Steps Yesterday: " + (s as String)
         }
     }
