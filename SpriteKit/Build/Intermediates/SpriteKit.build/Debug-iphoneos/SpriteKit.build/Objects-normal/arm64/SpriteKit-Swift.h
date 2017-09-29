@@ -217,12 +217,16 @@ SWIFT_CLASS("_TtC9SpriteKit14ViewController")
 @property (nonatomic, readonly, strong) CMPedometer * _Nonnull pedometer;
 @property (nonatomic, readonly, strong) CMMotionManager * _Nonnull motion;
 @property (nonatomic, readonly, strong) NSUserDefaults * _Nonnull userDefaults;
-@property (nonatomic) float totalSteps;
+@property (nonatomic) float stepsYesterday;
+@property (nonatomic) float stepsToday;
 @property (nonatomic, readonly, copy) NSCalendar * _Nonnull calendar;
-@property (nonatomic, copy) NSDate * _Nonnull twoDaysAgo;
+@property (nonatomic, copy) NSDate * _Nonnull yesterday;
+@property (nonatomic, copy) NSDate * _Nonnull today;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull steps;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified goalLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified stepLable;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified todaysSteps;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified yesterdaysSteps;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified movementLable;
 @property (nonatomic, weak) IBOutlet UIPickerView * _Null_unspecified goalPicker;
 - (void)viewDidLoad;
@@ -236,6 +240,8 @@ SWIFT_CLASS("_TtC9SpriteKit14ViewController")
 - (void)handleActivity:(CMMotionActivity * _Nullable)activity;
 - (void)startPedometerMonitoring;
 - (void)handlePedometer:(CMPedometerData * _Nullable)pedData error:(NSError * _Nullable)error;
+- (void)handlePedometerToday:(CMPedometerData * _Nullable)pedData error:(NSError * _Nullable)error;
+- (void)handlePedometerYesterday:(CMPedometerData * _Nullable)pedData error:(NSError * _Nullable)error;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

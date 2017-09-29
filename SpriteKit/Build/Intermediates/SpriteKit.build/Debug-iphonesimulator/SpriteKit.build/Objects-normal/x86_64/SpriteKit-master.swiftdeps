@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.0 (swiftlang-900.0.65 clang-900.0.37)"
+options: "ae2d18410069b406d1fb2c912ff56ddc"
+build_time: [1506707233, 505577000]
+inputs:
+  "/Users/esharp2/MobileSensing/Project3/Core-Motion-SpriteKit/SpriteKit/SpriteKit/ViewController.swift": [1506707195, 0]
+  "/Users/esharp2/MobileSensing/Project3/Core-Motion-SpriteKit/SpriteKit/SpriteKit/AppDelegate.swift": [1506536710, 0]

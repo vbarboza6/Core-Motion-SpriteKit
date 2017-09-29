@@ -136,18 +136,31 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     // MARK: Pedometer Functions
     func startPedometerMonitoring(){
+        let lateYesterday = calendar.date(byAdding: .day, value: -2, to: Date())!
         self.yesterday = calendar.date(byAdding: .day, value: -1, to: Date())!
+        self.today = calendar.date(byAdding: .day, value: 0, to: Date())!
+        
         //separate out the handler for better readability
         if CMPedometer.isStepCountingAvailable(){
-            pedometer.startUpdates(from: today, withHandler: handlePedometer(_:error:))
-            pedometer.queryPedometerData(from: yesterday, to: yesterday, withHandler: handlePedometerYesterday(_:error:))
+            pedometer.startUpdates(from: lateYesterday, withHandler: handlePedometer(_:error:))
+            pedometer.queryPedometerData(from: lateYesterday, to: yesterday, withHandler: handlePedometerYesterday(_:error:))
+            pedometer.queryPedometerData(from: yesterday, to: today, withHandler: handlePedometerToday(_:error:))
         }
     }
     
     //ped handler
     func handlePedometer(_ pedData:CMPedometerData?, error:Error?)->(){
+//        if let steps = pedData?.numberOfSteps {
+//            self.stepsToday = steps.floatValue
+//        }
+    }
+    
+    //ped handler
+    func handlePedometerToday(_ pedData:CMPedometerData?, error:Error?)->(){
         if let steps = pedData?.numberOfSteps {
             self.stepsToday = steps.floatValue
+            let s = NSString(format: "%.2f", self.stepsYesterday)
+            self.todaysSteps.text = "Steps Today: " + (s as String)
         }
     }
     

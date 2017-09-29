@@ -240,7 +240,6 @@ SWIFT_CLASS("_TtC9SpriteKit14ViewController")
 - (void)handleActivity:(CMMotionActivity * _Nullable)activity;
 - (void)startPedometerMonitoring;
 - (void)handlePedometer:(CMPedometerData * _Nullable)pedData error:(NSError * _Nullable)error;
-- (void)handlePedometerToday:(CMPedometerData * _Nullable)pedData error:(NSError * _Nullable)error;
 - (void)handlePedometerYesterday:(CMPedometerData * _Nullable)pedData error:(NSError * _Nullable)error;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

@@ -13,7 +13,6 @@ provides-dynamic-lookup:
 - "goalPicker"
 - "handleActivity"
 - "handlePedometer"
-- "handlePedometerToday"
 - "handlePedometerYesterday"
 - "motion"
 - "movementLable"
@@ -120,7 +119,6 @@ depends-member:
 - !private ["s7CVarArgP", "goalPicker"]
 - !private ["s7CVarArgP", "handleActivity"]
 - !private ["s7CVarArgP", "handlePedometer"]
-- !private ["s7CVarArgP", "handlePedometerToday"]
 - !private ["s7CVarArgP", "handlePedometerYesterday"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isActivityAvailable"]
@@ -192,7 +190,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "goalPicker"]
 - !private ["s28CustomDebugStringConvertibleP", "handleActivity"]
 - !private ["s28CustomDebugStringConvertibleP", "handlePedometer"]
-- !private ["s28CustomDebugStringConvertibleP", "handlePedometerToday"]
 - !private ["s28CustomDebugStringConvertibleP", "handlePedometerYesterday"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isActivityAvailable"]
@@ -266,7 +263,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "goalPicker"]
 - !private ["s23CustomStringConvertibleP", "handleActivity"]
 - !private ["s23CustomStringConvertibleP", "handlePedometer"]
-- !private ["s23CustomStringConvertibleP", "handlePedometerToday"]
 - !private ["s23CustomStringConvertibleP", "handlePedometerYesterday"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isActivityAvailable"]
@@ -349,7 +345,6 @@ depends-member:
 - !private ["s9EquatableP", "goalPicker"]
 - !private ["s9EquatableP", "handleActivity"]
 - !private ["s9EquatableP", "handlePedometer"]
-- !private ["s9EquatableP", "handlePedometerToday"]
 - !private ["s9EquatableP", "handlePedometerYesterday"]
 - ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isActivityAvailable"]
@@ -424,7 +419,6 @@ depends-member:
 - !private ["s8HashableP", "goalPicker"]
 - !private ["s8HashableP", "handleActivity"]
 - !private ["s8HashableP", "handlePedometer"]
-- !private ["s8HashableP", "handlePedometerToday"]
 - !private ["s8HashableP", "handlePedometerYesterday"]
 - ["s8HashableP", "init"]
 - !private ["s8HashableP", "isActivityAvailable"]
@@ -489,7 +483,6 @@ depends-member:
 - !private ["So8NSCodingP", "goalPicker"]
 - !private ["So8NSCodingP", "handleActivity"]
 - !private ["So8NSCodingP", "handlePedometer"]
-- !private ["So8NSCodingP", "handlePedometerToday"]
 - !private ["So8NSCodingP", "handlePedometerYesterday"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "movementLable"]
@@ -542,7 +535,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "goalPicker"]
 - !private ["So26NSExtensionRequestHandlingP", "handleActivity"]
 - !private ["So26NSExtensionRequestHandlingP", "handlePedometer"]
-- !private ["So26NSExtensionRequestHandlingP", "handlePedometerToday"]
 - !private ["So26NSExtensionRequestHandlingP", "handlePedometerYesterday"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "movementLable"]
@@ -598,7 +590,6 @@ depends-member:
 - ["So8NSObjectC", "goalPicker"]
 - ["So8NSObjectC", "handleActivity"]
 - ["So8NSObjectC", "handlePedometer"]
-- ["So8NSObjectC", "handlePedometerToday"]
 - ["So8NSObjectC", "handlePedometerYesterday"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isActivityAvailable"]
@@ -660,7 +651,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "goalPicker"]
 - !private ["So16NSObjectProtocolP", "handleActivity"]
 - !private ["So16NSObjectProtocolP", "handlePedometer"]
-- !private ["So16NSObjectProtocolP", "handlePedometerToday"]
 - !private ["So16NSObjectProtocolP", "handlePedometerYesterday"]
 - ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "isActivityAvailable"]
@@ -758,7 +748,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "goalPicker"]
 - !private ["So21UIAppearanceContainerP", "handleActivity"]
 - !private ["So21UIAppearanceContainerP", "handlePedometer"]
-- !private ["So21UIAppearanceContainerP", "handlePedometerToday"]
 - !private ["So21UIAppearanceContainerP", "handlePedometerYesterday"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "movementLable"]
@@ -797,7 +786,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "goalPicker"]
 - !private ["So18UIContentContainerP", "handleActivity"]
 - !private ["So18UIContentContainerP", "handlePedometer"]
-- !private ["So18UIContentContainerP", "handlePedometerToday"]
 - !private ["So18UIContentContainerP", "handlePedometerYesterday"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "movementLable"]
@@ -845,7 +833,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "goalPicker"]
 - !private ["So18UIFocusEnvironmentP", "handleActivity"]
 - !private ["So18UIFocusEnvironmentP", "handlePedometer"]
-- !private ["So18UIFocusEnvironmentP", "handlePedometerToday"]
 - !private ["So18UIFocusEnvironmentP", "handlePedometerYesterday"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "movementLable"]
@@ -891,7 +878,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "goalPicker"]
 - !private ["So30UIPasteConfigurationSupportingP", "handleActivity"]
 - !private ["So30UIPasteConfigurationSupportingP", "handlePedometer"]
-- !private ["So30UIPasteConfigurationSupportingP", "handlePedometerToday"]
 - !private ["So30UIPasteConfigurationSupportingP", "handlePedometerYesterday"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "movementLable"]
@@ -932,7 +918,6 @@ depends-member:
 - !private ["So22UIPickerViewDataSourceP", "goalPicker"]
 - !private ["So22UIPickerViewDataSourceP", "handleActivity"]
 - !private ["So22UIPickerViewDataSourceP", "handlePedometer"]
-- !private ["So22UIPickerViewDataSourceP", "handlePedometerToday"]
 - !private ["So22UIPickerViewDataSourceP", "handlePedometerYesterday"]
 - !private ["So22UIPickerViewDataSourceP", "movementLable"]
 - ["So22UIPickerViewDataSourceP", "numberOfComponents"]
@@ -966,7 +951,6 @@ depends-member:
 - !private ["So20UIPickerViewDelegateP", "goalPicker"]
 - !private ["So20UIPickerViewDelegateP", "handleActivity"]
 - !private ["So20UIPickerViewDelegateP", "handlePedometer"]
-- !private ["So20UIPickerViewDelegateP", "handlePedometerToday"]
 - !private ["So20UIPickerViewDelegateP", "handlePedometerYesterday"]
 - !private ["So20UIPickerViewDelegateP", "movementLable"]
 - ["So20UIPickerViewDelegateP", "numberOfComponents"]
@@ -1012,7 +996,6 @@ depends-member:
 - ["So11UIResponderC", "goalPicker"]
 - ["So11UIResponderC", "handleActivity"]
 - ["So11UIResponderC", "handlePedometer"]
-- ["So11UIResponderC", "handlePedometerToday"]
 - ["So11UIResponderC", "handlePedometerYesterday"]
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "motion"]
@@ -1054,7 +1037,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "goalPicker"]
 - !private ["So30UIResponderStandardEditActionsP", "handleActivity"]
 - !private ["So30UIResponderStandardEditActionsP", "handlePedometer"]
-- !private ["So30UIResponderStandardEditActionsP", "handlePedometerToday"]
 - !private ["So30UIResponderStandardEditActionsP", "handlePedometerYesterday"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "movementLable"]
@@ -1093,7 +1075,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "goalPicker"]
 - !private ["So16UIStateRestoringP", "handleActivity"]
 - !private ["So16UIStateRestoringP", "handlePedometer"]
-- !private ["So16UIStateRestoringP", "handlePedometerToday"]
 - !private ["So16UIStateRestoringP", "handlePedometerYesterday"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "movementLable"]
@@ -1132,7 +1113,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "goalPicker"]
 - !private ["So18UITraitEnvironmentP", "handleActivity"]
 - !private ["So18UITraitEnvironmentP", "handlePedometer"]
-- !private ["So18UITraitEnvironmentP", "handlePedometerToday"]
 - !private ["So18UITraitEnvironmentP", "handlePedometerYesterday"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "movementLable"]
@@ -1184,7 +1164,6 @@ depends-member:
 - ["So16UIViewControllerC", "goalPicker"]
 - ["So16UIViewControllerC", "handleActivity"]
 - ["So16UIViewControllerC", "handlePedometer"]
-- ["So16UIViewControllerC", "handlePedometerToday"]
 - ["So16UIViewControllerC", "handlePedometerYesterday"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "motion"]
@@ -1239,7 +1218,6 @@ depends-member:
 - ["9SpriteKit14ViewControllerC", "goalPicker"]
 - ["9SpriteKit14ViewControllerC", "handleActivity"]
 - ["9SpriteKit14ViewControllerC", "handlePedometer"]
-- ["9SpriteKit14ViewControllerC", "handlePedometerToday"]
 - ["9SpriteKit14ViewControllerC", "handlePedometerYesterday"]
 - ["9SpriteKit14ViewControllerC", "init"]
 - ["9SpriteKit14ViewControllerC", "motion"]
@@ -1308,7 +1286,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "goalPicker"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "handleActivity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "handlePedometer"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "handlePedometerToday"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "handlePedometerYesterday"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isActivityAvailable"]
@@ -1471,17 +1448,27 @@ depends-nominal:
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-interface-hash: "b1896018b635af88de7e5282b2aaa6cd"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "ee6fc7e7b3eca0e434bec4926db95f59"
